@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <style>
+     body{
+         background-image: url(b1.jpg);
+         /*background-repeat: no-repeat;sets how a bgimg is repeated either vertically/horizontally/not */
+         background-size: cover; /*Resize background image to cover entire container i.e body here*/
+     }
+     #st{
+         font-size: 50pt;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     #d{
+         background-color:darkblue;
+         position: relative;
+         top: 35px;
+         margin-left: 300px;
+         margin-right: 300px;
+     }
+     #s{
+        background-color:white;
+        border: none;
+        color:darkblue;
+        text-align: center;
+        font-size: 16px 32px;
+        padding: 9px ;
+     }
+     #s:hover{
+         background-color: darkblue;
+         color:white;
+     }
+     tbody tr:hover{
+         background-color:white;
+         color: darkblue;
+     }
+     table{
+         color: white;
+     }
+    </style>
+</head>
+<body>
+    <div id="st">
+        <center><font color="white">ViACATION</font></center>
+         </div>
+         <center><em><strong><font color="white" size="5pt">....Your Tour Guide....</font></strong></em></center>
+<div id="d">
+    <br>
+    <center><h2><font color="white">REGISTRATION</font></h2></center><br>
+    <form action="registerdb.php" method="post">
+        <table cellpadding="8" width="300px" bgcolor="darkblue" align="center" cellspacing="2">
+            <br>
+            <tr>
+              <td><b>USERNAME</td>
+              <td><input type="text" name="uname"  size="15" required autocomplete="off"></td>
+            </tr>
+              
+            <tr>
+              <td><b>NAME</td>
+              <td><input type="text" name="full"  size="30" required autocomplete="off"></td>
+            </tr>
+            
+            <tr>
+              <td><b>ADDRESS</td>
+              <td><textarea rows="3" name="address"  size="100" required autocomplete="off"></textarea></td>
+            </tr>
+              
+            <tr>
+              <td><b>EMAIL ID</td>
+              <td><input type="email" name="emailid"  size="30" required autocomplete="off"></td>
+            </tr>
+            
+            <tr>
+              <td><b>SEX</td>
+              <td><input type="radio" name="sex" value="male" size="10" required>Male
+              <input type="radio" name="sex" value="female" size="10" required>Female</td>
+            </tr>
+
+            <tr>
+              <td><b>CONTACT NUMBER</td>
+              <td><input type="tel" name="mobileno"  size="10" required autocomplete="off"></td>
+            </tr>
+
+            <tr>
+                <td><b>YOUR PASSWORD</td>
+                <td><input type="text"  size="15" value="viacation@123" required autocomplete="off" readonly></td>
+            </tr>
+              
+            <tr>
+            <td colspan="2" align="center"><input type="submit" name="submit" value="REGISTER" ></td>
+            </tr>
+            </table>       
+    </form>
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+         background-image: url(b1.jpg);
+         /*background-repeat: no-repeat;sets how a bgimg is repeated either vertically/horizontally/not */
+         background-size: cover; /*Resize background image to cover entire container i.e body here*/
+     }
+#st{
+         font-size: 50pt;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+li a:hover {
+  background-color: white;
+  color: darkblue;
+}
+
+table{
+    background-color: white;
+    border-collapse: collapse;
+}
+
+
+</style>
+<script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="st">
+        <center><font color="white">ViACATION</font></center>
+         </div>
+         <center><em><strong><font color="white" size="5pt">....Your Tour Guide....</font></strong></em></center>
+         <div>
+            <ul>
+              <li><a  href="viewpackage.html"><b>View Package Details</b></a></li>
+              <li><a  href="viewbooking.php"><b>View Booking Details</b></a></li>
+              <li><a  href="viewuser.php"><b>View User Details</b></a></li>
+              <li><a  href="main.html"><b>Logout</b></a></li>
+              </ul>
+            </div>
+            <center>
+                <br>
+                <h3>View package details</h3>
+                <br>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for places.." title="Type in a name">
+                <br><br>
+                <table border="1" id="myTable">
+                    <tr>
+                        <th>Place</th>
+                        <th>Stay Cost</th>
+                        <th>Food Cost</th>
+                        <th>Bus Cost</th>
+                        <th>Train Cost</th>
+                        <th>Flight Cost</th>
+                        <th>Number of days</th>
+                        <th>Total Amount</th>
+                        <th>Image</th>
+                    </tr>
+                    <tr>
+                        <td>Mumbai</td>
+                        <td>3000</td>
+                        <td>3000</td>
+                        <td>1500</td>
+                        <td>2500</td>
+                        <td>5500</td>
+                        <td>3 Days 2 Nights</td>
+                        <td>7500 approx.</td>
+                        <td><img src="mumbai.jfif" height=100 width=100></td>
+                    </tr>
+                    <tr>
+                        <td>Goa</td>
+                        <td>3000</td>
+                        <td>3000</td>
+                        <td>3000</td>
+                        <td>5500</td>
+                        <td>7500</td>
+                        <td>2 Days 1 Nights</td>
+                        <td>9000 approx.</td>
+                        <td><img src="goa.jfif" height=100 width=100></td>
+                    </tr>
+                    <tr>
+                        <td>Kerala</td>
+                        <td>3000</td>
+                        <td>5000</td>
+                        <td>2500</td>
+                        <td>6000</td>
+                        <td>8000</td>
+                        <td>4 Days 3 Nights</td>
+                        <td>10500 approx.</td>
+                        <td><img src="kerala.jfif" height=100 width=100></td>
+                    </tr>
+                    <tr>
+                        <td>Kashmir</td>
+                        <td>5000</td>
+                        <td>4000</td>
+                        <td>3500</td>
+                        <td>2500</td>
+                        <td>5500</td>
+                        <td>3 Days 2 Nights</td>
+                        <td>12500 approx.</td>
+                        <td><img src="kashmir.jfif" height=100 width=100></td>
+                    </tr>
+                    <tr>
+                        <td>Manali</td>
+                        <td>11000</td>
+                        <td>6000</td>
+                        <td>1500</td>
+                        <td>3500</td>
+                        <td>6500</td>
+                        <td>4 Days 3 Nights</td>
+                        <td>17000 approx.</td>
+                        <td><img src="manali.jfif" height=100 width=100></td>
+                    </tr>
+                    <tr>
+                        <td>Hyderabad</td>
+                        <td>100000</td>
+                        <td>50000</td>
+                        <td>40000</td>
+                        <td>50000</td>
+                        <td>60000</td>
+                        <td>8 Days 7 Nights</td>
+                        <td>190000 approx.</td>
+                        <td><img src="hyderabad.jfif" height=100 width=100></td>
+                    </tr>
+                </table>
+            </center>
+</body>
+</html>

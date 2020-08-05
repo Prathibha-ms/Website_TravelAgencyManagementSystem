@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <style>
+     body{
+         background-image: url(b1.jpg);
+         /*background-repeat: no-repeat;sets how a bgimg is repeated either vertically/horizontally/not */
+         background-size: cover; /*Resize background image to cover entire container i.e body here*/
+     }
+     #st{
+         font-size: 50pt;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     #d{
+         background-color:darkblue;
+         position: relative;
+         top: 150px;
+         margin-left: 400px;
+         margin-right: 400px;
+     }
+     #s{
+        background-color:white;
+        border: none;
+        color:darkblue;
+        text-align: center;
+        font-size: 16px 32px;
+        padding: 9px ;
+     }
+     #s:hover{
+         background-color: darkblue;
+         color:white;
+     }
+    </style>
+</head>
+<body link="white">
+    <div id="st">
+        <center><font color="white">ViACATION</font></center>
+         </div>
+         <center><em><strong><font color="white" size="5pt">....Your Tour Guide....</font></strong></em></center>
+    <div id="d">
+        <form action="ulogin.php" method="post">
+        <br><center><h3><font color="white">User Login</font></h3><br>
+        <input type="text" placeholder="Username" name="un" autocomplete="off"><br><br><br>
+        <input type="password" placeholder="Password" name="up" autocomplete="off"><br><br>
+        <input type="submit" id="s" value="Login">
+        <center><font color="white"> Not a member??   <a href="newusr.html">SignIn</a></font></center>
+    </center>
+    </form>
+    </div>
+</body>
+</html>

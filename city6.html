@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+         background-image: url(b1.jpg);
+         /*background-repeat: no-repeat;sets how a bgimg is repeated either vertically/horizontally/not */
+         background-size: cover; /*Resize background image to cover entire container i.e body here*/
+     }
+#st{
+         font-size: 50pt;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+li a:hover {
+  background-color: white;
+  color: darkblue;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: white;
+}
+</style>
+<script>
+function Sum()
+{
+    var s=parseInt(document.getElementById("s").value);
+    var f=parseInt(document.getElementById("f").value);
+    var t=parseInt(document.getElementById("c").value);
+    var sum=s+f+t;
+    alert("Total tour cost is "+sum);
+
+}
+</script>
+</head>
+<body>
+    <div id="st">
+        <center><font color="white">ViACATION</font></center>
+         </div>
+         <center><em><strong><font color="white" size="5pt">....Your Tour Guide....</font></strong></em></center>
+         <div>
+            <ul>
+              <li><a class="active" href="viewplace.html"><b>View Place</b></a></li>
+              <li><a class="active" href="main.html"><b>Logout</b></a></li>
+              </ul>
+            </div>
+            <center><h2>Place Details</h2></center>
+            <center>
+                <form action="confirmbook.html" method="POST">
+            <table border="1">
+                <tr>
+                    <td rowspan="9"><center><img src="hyderabad.jfif" height="300" width="300"</center></td>
+                    <td colspan="5">Name: Hyderabad</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Description: Mumbai with Gateway and beach</td>
+                </tr>
+                <tr>
+                    <td colspan="5">3 Days 2 Nights</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Number of Adult:4 Number of children 4</td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input type="checkbox" name="s" id="s" value="3000">Stay Rs:3000</td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input type="checkbox" name="f" id="f" value="3000">Food Rs:3000</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Travelling<br><input type="radio" name="c1" id="c" value="1500">Bus Rs:1500 <input type="radio" name="c1" id="c" value="2500">Train Rs:2500 <input type="radio" name="c1" id="c" value="5500">Airline Rs:5500</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Date: <input type="date" name="d"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input type="checkbox" name="tc" id="tc" value="Hyderabad" required>I agree to the terms and conditions 
+                </tr>
+                <tr>
+                    <td colspan="6"><center><input type="submit" value="Confirm Booking" onclick="Sum()"></center></td>
+                </tr>
+            </table>
+        </form>
+        </center>
+</body>
+</html>
